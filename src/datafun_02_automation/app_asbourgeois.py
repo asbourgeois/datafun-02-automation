@@ -75,13 +75,8 @@ def write_text_file(path: Path, content: str) -> None:
 
 
 def create_files_from_numeric_range() -> None:
-    # TODO: Create a file for each year in the range 2023 to 2026 inclusive.
-    # TODO: Change the docstring, variable names, code, and log messages accordingly.
-    # TODO: Change the filename format to start with your name or alias.
-    # TODO: Customize the content of each created file.
-
     
-    """Create one file per quarter for a given inclusive quarter range.
+    """Create one file per year for a given inclusive year range.
 
     Arguments: None
 
@@ -91,24 +86,24 @@ def create_files_from_numeric_range() -> None:
     LOG.info("START FUNCTION 1: create_files_from_numeric_range()")
 
     # Define a variable for the start
-    start_quarter: int = 1
+    start_year: int = 2023
     # Define a variable for the end
-    end_quarter: int = 4
+    end_year: int = 2026
 
     # LOG the starting name and value
-    LOG.info(f"Starting quarter: {start_quarter}")
+    LOG.info(f"Starting year: {start_year}")
 
     # LOG the ending name and value
-    LOG.info(f"Ending quarter: {end_quarter}")
+    LOG.info(f"Ending year: {end_year}")
 
     # For each number in the range (add one to the end to be INCLUSIVE)
-    for quarter_number in range(start_quarter, end_quarter + 1):
-        # Define a filename that starts with my name and uses the quarter number
-        filename: str = f"case_quarter_{quarter_number}.txt"
+    for file_year in range(start_year, end_year + 1):
+        # Define a filename that starts with my name and uses the year number
+        filename: str = f"bourgeois_year_{file_year}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
-        content: str = f"Here is my report for quarter number: {quarter_number}\n"
+        content: str = f"Here is my report for the year: {file_year}\n"
         # Call the provided helper function to write the file and log it
         write_text_file(path, content)
 
