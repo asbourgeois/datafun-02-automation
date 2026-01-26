@@ -142,10 +142,7 @@ def create_files_from_list() -> None:
 # === DECLARE REPETITION FUNCTION 3: USING LIST COMPREHENSION ===
 
 def create_files_using_list_comprehension() -> None:
-    # TODO: Create a file for each item in a new list you transformed USING A LIST COMPREHENSION (do not use pets).
-    # TODO: Change the docstring, variable names, code, and log messages accordingly.
-    # TODO: Change the filename format to start with your name or alias.
-    # TODO: Customize the content of each created file.
+
     """Create files by transforming names using list comprehension.
 
     Arguments: None
@@ -198,9 +195,9 @@ def create_files_periodically() -> None:
     LOG.info("WHY: Use while loop for REPETITIVE tasks with a WAIT or DELAY.")
 
     # Define wait_seconds: Seconds to wait between file writes.
-    wait_seconds: int = 1
+    wait_seconds: int = 6
     # Define count: How many files to create.
-    count: int = 3
+    count: int = 7
 
     # Log the wait_seconds
     LOG.info(f"Waiting seconds between files: {wait_seconds}")
@@ -214,7 +211,7 @@ def create_files_periodically() -> None:
     while i <= count:
         # Define a filename that starts with my name and uses the counter
         # Use 02d formatting for leading zeros and two digits
-        filename: str = f"case_{i:02d}.txt"
+        filename: str = f"bourgeois_{i:02d}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
