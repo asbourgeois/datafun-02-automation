@@ -112,10 +112,7 @@ def create_files_from_numeric_range() -> None:
 
 
 def create_files_from_list() -> None:
-    # TODO: Create a file for each item in a list (do not use pets).
-    # TODO: Change the docstring, variable names, code, and log messages accordingly.
-    # TODO: Change the filename format to start with your name or alias.
-    # TODO: Customize the content of each created file.
+
     """Create files based on a list of pet names.
 
     Arguments: None
@@ -144,7 +141,6 @@ def create_files_from_list() -> None:
 
 # === DECLARE REPETITION FUNCTION 3: USING LIST COMPREHENSION ===
 
-
 def create_files_using_list_comprehension() -> None:
     # TODO: Create a file for each item in a new list you transformed USING A LIST COMPREHENSION (do not use pets).
     # TODO: Change the docstring, variable names, code, and log messages accordingly.
@@ -162,21 +158,21 @@ def create_files_using_list_comprehension() -> None:
     LOG.info("WHY: They are super compact list transformations.")
     LOG.info("Read it as <do this logic> FOR each <item> IN <list>.")
 
-    # Define my pet list
-    pet_list: list[str] = ["dog", "cat", "fish"]
-    # Log my pet list
-    LOG.info(f"Pet list ={pet_list}")
+    # Define dog breed list
+    dog_breed_list: list[str] = ["Corgi", "Huskie", "Border Collie", "Golden Retriever"]
+    # Log the dog breed list
+    LOG.info(f"Dog Breed list ={dog_breed_list}")
 
     # Define a prefix (or any other transformation logic)
     prefix = "favorite_"
 
     # Use list comprehension syntax to create a new list from the pet list
-    favorite_list: list[str] = [f"{prefix}{name}" for name in pet_list]
+    favorite_list: list[str] = [f"{prefix}{name}" for name in dog_breed_list]
 
     # For each favorite name in the new favorite list
     for favorite in favorite_list:
         # Define a file name that starts with my name and uses this favorite name
-        filename: str = f"case_{favorite}.txt"
+        filename: str = f"bourgeois_{favorite}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
