@@ -86,18 +86,18 @@ def create_files_from_numeric_range() -> None:
     LOG.info("START FUNCTION 1: create_files_from_numeric_range()")
 
     # Define a variable for the start
-    start_year: int = 2023
+    START_YEAR: int = 2023
     # Define a variable for the end
-    end_year: int = 2026
+    END_YEAR: int = 2026
 
     # LOG the starting name and value
-    LOG.info(f"Starting year: {start_year}")
+    LOG.info(f"Starting year: {START_YEAR}")
 
     # LOG the ending name and value
-    LOG.info(f"Ending year: {end_year}")
+    LOG.info(f"Ending year: {END_YEAR}")
 
     # For each number in the range (add one to the end to be INCLUSIVE)
-    for file_year in range(start_year, end_year + 1):
+    for file_year in range(START_YEAR, END_YEAR + 1):
         # Define a filename that starts with my name and uses the year number
         filename: str = f"bourgeois_year_{file_year}.txt"
         # Define the path for my new file
