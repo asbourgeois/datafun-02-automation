@@ -75,7 +75,6 @@ def write_text_file(path: Path, content: str) -> None:
 
 
 def create_files_from_numeric_range() -> None:
-    
     """Create one file per year for a given inclusive year range.
 
     Arguments: None
@@ -112,7 +111,6 @@ def create_files_from_numeric_range() -> None:
 
 
 def create_files_from_list() -> None:
-
     """Create files based on a list of pet names.
 
     Arguments: None
@@ -141,8 +139,8 @@ def create_files_from_list() -> None:
 
 # === DECLARE REPETITION FUNCTION 3: USING LIST COMPREHENSION ===
 
-def create_files_using_list_comprehension() -> None:
 
+def create_files_using_list_comprehension() -> None:
     """Create files by transforming names using list comprehension.
 
     Arguments: None
