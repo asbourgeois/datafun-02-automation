@@ -1,7 +1,7 @@
-"""app_yourname.py - Project script.
+"""app_asbourgeois.py - Project script.
 
-Author: Your Name or Alias
-Date: 2026-01
+Author: Alexia Bourgeois
+Date: 2026-01-25
 
 Practice key Python skills:
 - docstring comments used at the start of each module and function
