@@ -124,20 +124,20 @@ def create_files_from_list() -> None:
     # Log the start of this function
     LOG.info("START FUNCTION 2: create_files_from_list()")
 
-    # Define a pet list
-    pet_list: list[str] = ["dog", "cat", "fish"]
+    # Define a dog breed list
+    dog_breed_list: list[str] = ["Corgi", "Huskie", "Border Collie", "Golden Retriever"]
 
-    # Log my pet list
-    LOG.info(f"Pet list ={pet_list}")
+    # Log dog breed list
+    LOG.info(f"Dog Breed list ={dog_breed_list}")
 
-    # For each pet name in the pet list (must have a colon and indentation matters!)
-    for pet_name in pet_list:
-        # Define a filename that starts with my name and uses this pet name
-        filename: str = f"case_{pet_name}.txt"
+    # For each dog breed in the breed list (must have a colon and indentation matters!)
+    for dog_breed_name in dog_breed_list:
+        # Define a filename that starts with my name and uses this dog breed name
+        filename: str = f"bourgeois_{dog_breed_name}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
-        content: str = f"Here is my pet data for pet: '{pet_name}'\n"
+        content: str = f"Here is my dog data for dog breeds: '{dog_breed_name}'\n"
         # Call the provided helper function to write the file and log it
         write_text_file(path, content)
 
